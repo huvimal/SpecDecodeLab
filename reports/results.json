@@ -1,0 +1,44 @@
+{
+  "project": "SpecDecodeLab",
+  "number": 18,
+  "status": "local_run_passed",
+  "timestamp_utc": "2026-11-21T04:31:02Z",
+  "duration_seconds": 17.42659592628479,
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "Pillow": "13.0.0",
+    "torch": "2.10.0+cpu",
+    "transformers": "4.57.6",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.32.0",
+    "mcp": "2.3.0"
+  },
+  "source_sha256": {
+    "common.py": "6824312bac56d81a071760617f624272948f76fcae8190f8168a8911c8f7e8b0",
+    "experiment.py": "0595e91ae8d4dafb050ae905a2f70ad13ef18cc5e5c1fdc2f71faded9b68c4c2",
+    "run.py": "f59c8f7399ab614d89f8a565b96f60875e75284d439fe5a38bd6837c730dfdbf"
+  },
+  "result": {
+    "accepted_draft_tokens": 2,
+    "proposed_tokens": 32,
+    "target_calls": 11,
+    "greedy_seconds": 1.4648636000019906,
+    "speculative_seconds": 1.418245550001302,
+    "checks": [
+      "Speculative verification exactly matches greedy target output"
+    ],
+    "scope": "Pretrained SmolLM2 target, fitted token-bigram draft, greedy verification only. No sampling or KV-cache optimization; negative speed results retained."
+  },
+  "models_used": [
+    {
+      "kind": "causal",
+      "config_sha256": "8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a",
+      "upstream_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+      "weights_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c"
+    }
+  ],
+  "publication_note": "Local fixture checks passed, not independent validation or user approval. Review this run before publishing."
+}

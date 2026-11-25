@@ -1,0 +1,15 @@
+{
+  "number": 18,
+  "name": "SpecDecodeLab",
+  "short": "Greedy speculative decoding",
+  "summary": "Verify token-bigram draft proposals against a pretrained causal target and compare exact greedy outputs.",
+  "profile": "deep",
+  "timeout": 600,
+  "scope": "Pretrained SmolLM2 target, fitted token-bigram draft, greedy verification only. No sampling or KV-cache optimization; negative speed results retained.",
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "Data Processing",
+    "Software Testing"
+  ]
+}
